@@ -59,8 +59,6 @@ export abstract class MenubarControl extends Disposable {
 		'Terminal': IMenu;
 		'Window'?: IMenu;
 		'Help': IMenu;
-		'Aaa'?:IMenu;
-		'Bbb'?:IMenu;
 		[index: string]: IMenu | undefined;
 	};
 
@@ -72,9 +70,7 @@ export abstract class MenubarControl extends Disposable {
 		'Go': nls.localize({ key: 'mGoto', comment: ['&& denotes a mnemonic'] }, "&&Go"),
 		'Run': nls.localize({ key: 'mRun', comment: ['&& denotes a mnemonic'] }, "&&Run"),
 		'Terminal': nls.localize({ key: 'mTerminal', comment: ['&& denotes a mnemonic'] }, "&&Terminal"),
-		'Help': nls.localize({ key: 'mHelp', comment: ['&& denotes a mnemonic'] }, "&&Help"),
-		'Aaa': nls.localize({ key: 'mAaa', comment: ['&& denotes a mnemonic'] }, "&&Aaa"),
-		'Bbb': nls.localize({ key: 'mBbb', comment: ['&& denotes a mnemonic'] }, "&&Bbb"),
+		'Help': nls.localize({ key: 'mHelp', comment: ['&& denotes a mnemonic'] }, "&&Help")
 	};
 
 	protected recentlyOpened: IRecentlyOpened = { files: [], workspaces: [] };
@@ -110,9 +106,7 @@ export abstract class MenubarControl extends Disposable {
 			'Go': this._register(this.menuService.createMenu(MenuId.MenubarGoMenu, this.contextKeyService)),
 			'Run': this._register(this.menuService.createMenu(MenuId.MenubarDebugMenu, this.contextKeyService)),
 			'Terminal': this._register(this.menuService.createMenu(MenuId.MenubarTerminalMenu, this.contextKeyService)),
-			'Help': this._register(this.menuService.createMenu(MenuId.MenubarHelpMenu, this.contextKeyService)),
-			'Aaa': this._register(this.menuService.createMenu(MenuId.MenubarGoMenu, this.contextKeyService)),
-			'Bbb': this._register(this.menuService.createMenu(MenuId.MenubarBbbMenu, this.contextKeyService))
+			'Help': this._register(this.menuService.createMenu(MenuId.MenubarHelpMenu, this.contextKeyService))
 		};
 
 		this.menuUpdater = this._register(new RunOnceScheduler(() => this.doUpdateMenubar(false), 200));
