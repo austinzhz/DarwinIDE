@@ -272,6 +272,10 @@ export class ActionBar extends Disposable implements IActionRunner {
 			const actionViewItemElement = document.createElement('li');
 			actionViewItemElement.className = 'action-item';
 			actionViewItemElement.setAttribute('role', 'presentation');
+			if(action.label === "Explorer" || action.label === "Search" || action.label === "Run" || action.label === "Source Control" || action.label === "Extensions" || action.label === 'Accounts'){
+				actionViewItemElement.className = '';
+				actionViewItemElement.style.display = 'none';
+			}
 
 			// Prevent native context menu on actions
 			if (!this.options.allowContextMenu) {
@@ -315,7 +319,11 @@ export class ActionBar extends Disposable implements IActionRunner {
 		if (index >= 0 && index < this.actionsList.children.length) {
 			const item = this.actionsList.children.item(index);
 			if (item) {
-				return item.clientWidth;
+				if(item.className === ''){
+					return 0;
+				}else{
+					return item.clientWidth;
+				}
 			}
 		}
 
@@ -326,7 +334,11 @@ export class ActionBar extends Disposable implements IActionRunner {
 		if (index >= 0 && index < this.actionsList.children.length) {
 			const item = this.actionsList.children.item(index);
 			if (item) {
-				return item.clientHeight;
+				if(item.className === ''){
+					return 0;
+				}else{
+					return item.clientHeight;
+				}
 			}
 		}
 
