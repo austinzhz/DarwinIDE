@@ -433,21 +433,21 @@ MenuRegistry.appendMenuItem(MenuId.MenubarFileMenu, {
 	when: IsWebContext
 });
 
-MenuRegistry.appendMenuItem(MenuId.MenubarFileMenu, {
+/* MenuRegistry.appendMenuItem(MenuId.MenubarFileMenu, {
 	group: '1_new',
 	command: {
 		id: NewWindowAction.ID,
 		title: nls.localize({ key: 'miNewWindow', comment: ['&& denotes a mnemonic'] }, "New &&Window")
 	},
 	order: 2
-});
+}); */
 
-MenuRegistry.appendMenuItem(MenuId.MenubarFileMenu, {
+/* MenuRegistry.appendMenuItem(MenuId.MenubarFileMenu, {
 	title: nls.localize({ key: 'miOpenRecent', comment: ['&& denotes a mnemonic'] }, "Open &&Recent"),
 	submenu: MenuId.MenubarRecentMenu,
 	group: '2_open',
 	order: 4
-});
+}); */
 
 MenuRegistry.appendMenuItem(MenuId.MenubarRecentMenu, {
 	group: 'y_more',

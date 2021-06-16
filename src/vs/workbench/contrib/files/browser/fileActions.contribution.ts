@@ -577,14 +577,14 @@ MenuRegistry.appendMenuItem(MenuId.EmptyEditorGroupContext, { command: { id: 'wo
 
 // File menu
 
-MenuRegistry.appendMenuItem(MenuId.MenubarFileMenu, {
+/* MenuRegistry.appendMenuItem(MenuId.MenubarFileMenu, {
 	group: '1_new',
 	command: {
 		id: NEW_UNTITLED_FILE_COMMAND_ID,
 		title: nls.localize({ key: 'miNewFile', comment: ['&& denotes a mnemonic'] }, "&&New File")
 	},
 	order: 1
-});
+}); */
 
 MenuRegistry.appendMenuItem(MenuId.MenubarFileMenu, {
 	group: '4_save',
@@ -616,7 +616,7 @@ MenuRegistry.appendMenuItem(MenuId.MenubarFileMenu, {
 	order: 3
 });
 
-if (isMacintosh) {
+/* if (isMacintosh) {
 	MenuRegistry.appendMenuItem(MenuId.MenubarFileMenu, {
 		group: '2_open',
 		command: {
@@ -643,16 +643,16 @@ if (isMacintosh) {
 		},
 		order: 2
 	});
-}
+} */
 
-MenuRegistry.appendMenuItem(MenuId.MenubarFileMenu, {
+/* MenuRegistry.appendMenuItem(MenuId.MenubarFileMenu, {
 	group: '2_open',
 	command: {
 		id: OpenWorkspaceAction.ID,
 		title: nls.localize({ key: 'miOpenWorkspace', comment: ['&& denotes a mnemonic'] }, "Open Wor&&kspace...")
 	},
 	order: 3
-});
+}); */
 
 MenuRegistry.appendMenuItem(MenuId.MenubarFileMenu, {
 	group: '5_autosave',
@@ -664,7 +664,7 @@ MenuRegistry.appendMenuItem(MenuId.MenubarFileMenu, {
 	order: 1
 });
 
-MenuRegistry.appendMenuItem(MenuId.MenubarFileMenu, {
+/* MenuRegistry.appendMenuItem(MenuId.MenubarFileMenu, {
 	group: '6_close',
 	command: {
 		id: REVERT_FILE_COMMAND_ID,
@@ -672,9 +672,9 @@ MenuRegistry.appendMenuItem(MenuId.MenubarFileMenu, {
 		precondition: ContextKeyExpr.or(ActiveEditorContext, ContextKeyExpr.and(ExplorerViewletVisibleContext, SidebarFocusContext))
 	},
 	order: 1
-});
+}); */
 
-MenuRegistry.appendMenuItem(MenuId.MenubarFileMenu, {
+/* MenuRegistry.appendMenuItem(MenuId.MenubarFileMenu, {
 	group: '6_close',
 	command: {
 		id: CLOSE_EDITOR_COMMAND_ID,
@@ -682,7 +682,7 @@ MenuRegistry.appendMenuItem(MenuId.MenubarFileMenu, {
 		precondition: ContextKeyExpr.or(ActiveEditorContext, ContextKeyExpr.and(ExplorerViewletVisibleContext, SidebarFocusContext))
 	},
 	order: 2
-});
+}); */
 
 // Go to menu
 

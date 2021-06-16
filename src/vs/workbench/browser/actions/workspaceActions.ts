@@ -267,7 +267,7 @@ CommandsRegistry.registerCommand(OpenWorkspaceConfigFileAction.ID, serviceAccess
 	serviceAccessor.get(IInstantiationService).createInstance(OpenWorkspaceConfigFileAction, OpenWorkspaceConfigFileAction.ID, OpenWorkspaceConfigFileAction.LABEL).run();
 });
 
-MenuRegistry.appendMenuItem(MenuId.MenubarFileMenu, {
+/* MenuRegistry.appendMenuItem(MenuId.MenubarFileMenu, {
 	group: '3_workspace',
 	command: {
 		id: ADD_ROOT_FOLDER_COMMAND_ID,
@@ -275,8 +275,8 @@ MenuRegistry.appendMenuItem(MenuId.MenubarFileMenu, {
 	},
 	order: 1
 });
-
-MenuRegistry.appendMenuItem(MenuId.MenubarFileMenu, {
+ */
+/* MenuRegistry.appendMenuItem(MenuId.MenubarFileMenu, {
 	group: '3_workspace',
 	command: {
 		id: SaveWorkspaceAsAction.ID,
@@ -284,7 +284,7 @@ MenuRegistry.appendMenuItem(MenuId.MenubarFileMenu, {
 	},
 	order: 2,
 	when: EmptyWorkspaceSupportContext
-});
+}); */
 
 MenuRegistry.appendMenuItem(MenuId.CommandPalette, {
 	command: {
@@ -294,7 +294,7 @@ MenuRegistry.appendMenuItem(MenuId.CommandPalette, {
 	when: WorkbenchStateContext.isEqualTo('workspace')
 });
 
-MenuRegistry.appendMenuItem(MenuId.MenubarFileMenu, {
+/* MenuRegistry.appendMenuItem(MenuId.MenubarFileMenu, {
 	group: '6_close',
 	command: {
 		id: CloseWorkspaceAction.ID,
@@ -303,9 +303,9 @@ MenuRegistry.appendMenuItem(MenuId.MenubarFileMenu, {
 	},
 	order: 3,
 	when: ContextKeyExpr.and(WorkbenchStateContext.notEqualsTo('workspace'), EmptyWorkspaceSupportContext)
-});
+}); */
 
-MenuRegistry.appendMenuItem(MenuId.MenubarFileMenu, {
+/* MenuRegistry.appendMenuItem(MenuId.MenubarFileMenu, {
 	group: '6_close',
 	command: {
 		id: CloseWorkspaceAction.ID,
@@ -313,4 +313,4 @@ MenuRegistry.appendMenuItem(MenuId.MenubarFileMenu, {
 	},
 	order: 3,
 	when: ContextKeyExpr.and(WorkbenchStateContext.isEqualTo('workspace'), EmptyWorkspaceSupportContext)
-});
+}); */
