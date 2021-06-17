@@ -109,7 +109,7 @@ const markersViewIcon = registerIcon('markers-view-icon', Codicon.warning, local
 
 // markers view container
 const TOGGLE_MARKERS_VIEW_ACTION_ID = 'workbench.actions.view.problems';
-const VIEW_CONTAINER: ViewContainer = Registry.as<IViewContainersRegistry>(ViewContainerExtensions.ViewContainersRegistry).registerViewContainer({
+/* const VIEW_CONTAINER: ViewContainer = Registry.as<IViewContainersRegistry>(ViewContainerExtensions.ViewContainersRegistry).registerViewContainer({
 	id: Constants.MARKERS_CONTAINER_ID,
 	name: Messages.MARKERS_PANEL_TITLE_PROBLEMS,
 	icon: markersViewIcon,
@@ -132,7 +132,7 @@ Registry.as<IViewsRegistry>(ViewContainerExtensions.ViewsRegistry).registerViews
 	canToggleVisibility: false,
 	canMoveView: true,
 	ctorDescriptor: new SyncDescriptor(MarkersView),
-}], VIEW_CONTAINER);
+}], VIEW_CONTAINER); */
 
 // workbench
 const workbenchRegistry = Registry.as<IWorkbenchContributionsRegistry>(WorkbenchExtensions.Workbench);

@@ -60,7 +60,7 @@ registerCommandsAndActions();
 registerDebugMenu();
 registerEditorActions();
 registerCommands();
-registerDebugPanel();
+//registerDebugPanel();
 
 registerSingleton(IDebugService, DebugService, true);
 registerDebugView();
