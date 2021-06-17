@@ -1187,10 +1187,11 @@ workbenchContributionsRegistry.registerWorkbenchContribution(PreferencesContribu
 
 // Preferences menu
 
-MenuRegistry.appendMenuItem(MenuId.MenubarFileMenu, {
+/* MenuRegistry.appendMenuItem(MenuId.MenubarFileMenu, {
 	title: nls.localize({ key: 'miPreferences', comment: ['&& denotes a mnemonic'] }, "&&Preferences"),
 	submenu: MenuId.MenubarPreferencesMenu,
 	group: '5_autosave',
 	order: 2,
 	when: IsMacNativeContext.toNegated() // on macOS native the preferences menu is separate under the application menu
 });
+ */
