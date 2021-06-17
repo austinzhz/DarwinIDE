@@ -75,8 +75,8 @@ registerSingleton(IExtensionsWorkbenchService, ExtensionsWorkbenchService);
 registerSingleton(IExtensionRecommendationNotificationService, ExtensionRecommendationNotificationService);
 registerSingleton(IExtensionRecommendationsService, ExtensionRecommendationsService);
 
-Registry.as<IOutputChannelRegistry>(OutputExtensions.OutputChannels)
-	.registerChannel({ id: ExtensionsChannelId, label: ExtensionsLabel, log: false });
+/* Registry.as<IOutputChannelRegistry>(OutputExtensions.OutputChannels)
+	.registerChannel({ id: ExtensionsChannelId, label: ExtensionsLabel, log: false }); */
 
 // Quick Access
 Registry.as<IQuickAccessRegistry>(Extensions.Quickaccess).registerQuickAccessProvider({
