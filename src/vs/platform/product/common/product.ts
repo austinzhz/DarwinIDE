@@ -47,6 +47,12 @@ else {
 	product = require.__$__nodeRequire(joinPath(rootPath, 'product.json').fsPath);
 	const pkg = require.__$__nodeRequire(joinPath(rootPath, 'package.json').fsPath) as { version: string; };
 
+	//use our product name
+	Object.assign(product, {
+		nameShort: `达尔文类脑应用集成开发环境`,
+		nameLong: `达尔文类脑应用集成开发环境`
+	});
+
 	// Running out of sources
 	if (env['VSCODE_DEV']) {
 		Object.assign(product, {
