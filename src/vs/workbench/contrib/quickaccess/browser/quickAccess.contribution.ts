@@ -84,14 +84,14 @@ MenuRegistry.appendMenuItem(MenuId.MenubarGoMenu, {
 	order: 1
 });
 
-MenuRegistry.appendMenuItem(MenuId.GlobalActivity, {
+/* MenuRegistry.appendMenuItem(MenuId.GlobalActivity, {
 	group: '1_command',
 	command: {
 		id: ShowAllCommandsAction.ID,
 		title: localize('commandPalette', "Command Palette...")
 	},
 	order: 1
-});
+}); */
 
 MenuRegistry.appendMenuItem(MenuId.EditorContext, {
 	group: 'z_commands',

@@ -424,11 +424,13 @@ class ExtensionsContributions extends Disposable implements IWorkbenchContributi
 				id: MenuId.MenubarPreferencesMenu,
 				group: '2_keybindings',
 				order: 2
-			}, {
-				id: MenuId.GlobalActivity,
-				group: '2_keybindings',
-				order: 2
-			}],
+			}
+				/* , {
+					id: MenuId.GlobalActivity,
+					group: '2_keybindings',
+					order: 2
+				} */
+			],
 			keybinding: {
 				primary: KeyChord(KeyMod.CtrlCmd | KeyCode.KEY_K, KeyMod.CtrlCmd | KeyCode.KEY_M),
 				weight: KeybindingWeight.WorkbenchContrib

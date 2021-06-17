@@ -468,14 +468,14 @@ class PreferencesActionsContribution extends Disposable implements IWorkbenchCon
 			},
 			order: 2
 		});
-		MenuRegistry.appendMenuItem(MenuId.GlobalActivity, {
+		/* MenuRegistry.appendMenuItem(MenuId.GlobalActivity, {
 			group: '2_configuration',
 			command: {
 				id: SETTINGS_EDITOR_COMMAND_FILTER_ONLINE,
 				title: nls.localize('onlineServices', "Online Services Settings")
 			},
 			order: 2
-		});
+		}); */
 
 		this.registerSettingsEditorActions();
 
@@ -838,14 +838,14 @@ class PreferencesActionsContribution extends Disposable implements IWorkbenchCon
 				return accessor.get(IPreferencesService).openGlobalKeybindingSettings(false, { query });
 			}
 		});
-		MenuRegistry.appendMenuItem(MenuId.GlobalActivity, {
+		/* MenuRegistry.appendMenuItem(MenuId.GlobalActivity, {
 			command: {
 				id: 'workbench.action.openGlobalKeybindings',
 				title: { value: nls.localize('Keyboard Shortcuts', "Keyboard Shortcuts"), original: 'Keyboard Shortcuts' }
 			},
 			group: '2_keybindings',
 			order: 1
-		});
+		}); */
 		MenuRegistry.appendMenuItem(MenuId.MenubarPreferencesMenu, {
 			command: {
 				id: 'workbench.action.openGlobalKeybindings',

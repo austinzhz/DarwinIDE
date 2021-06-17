@@ -381,14 +381,14 @@ MenuRegistry.appendMenuItem(MenuId.GlobalActivity, {
 	order: 1
 });
 
-MenuRegistry.appendMenuItem(MenuId.GlobalActivity, {
+/* MenuRegistry.appendMenuItem(MenuId.GlobalActivity, {
 	group: '4_themes',
 	command: {
 		id: SelectFileIconThemeAction.ID,
 		title: localize('themes.selectIconTheme.label', "File Icon Theme")
 	},
 	order: 2
-});
+}); */
 
 
 MenuRegistry.appendMenuItem(MenuId.MenubarAaaMenu, {
