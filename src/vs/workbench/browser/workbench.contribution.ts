@@ -356,7 +356,7 @@ import { isStandalone } from 'vs/base/browser/browser';
 						return '${activeEditorShort}${separator}${rootName}'; // macOS has native dirty indicator
 					}
 
-					const base = '${dirty}${activeEditorShort}${separator}${rootName}${separator}${appName}';
+					const base = '${dirty}${appName}';
 					if (isWeb) {
 						return base + '${separator}${remoteName}'; // Web: always show remote name
 					}
